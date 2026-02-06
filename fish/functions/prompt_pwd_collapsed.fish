@@ -4,13 +4,13 @@ function prompt_pwd_collapsed
   set -l current_dirs (string split "/" -- $default_pwd)
 
   if test (count $current_dirs) -le 4
-    echo "$default_pwd"
+    printf "$default_pwd"
     return
   end
 
   if string match -q "~*" $default_pwd
-    printf '%s' "~"
+    printf "~"
   end
   set -l tail $current_dirs[-3..-1]
-  echo "/$icon/"(string join "/" $tail)
+  printf "/$icon/$(string join "/" $tail)"
 end

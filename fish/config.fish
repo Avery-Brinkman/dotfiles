@@ -1,5 +1,5 @@
 if status is-interactive
-	set -g fish_greeting
+  set -g fish_greeting
 
   set -g __fish_git_prompt_show_informative_status true
   set -g __fish_git_prompt_showuntrackedfiles true

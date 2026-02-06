@@ -17,6 +17,12 @@ return {
 					highlight_opened_files = true,
 				},
 			},
+			filesystem = {
+				filtered_items = {
+					visible = true,
+					hide_dotfiles = false,
+				},
+			},
 		},
 	},
 	{
