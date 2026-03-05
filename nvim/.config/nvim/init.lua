@@ -10,7 +10,7 @@ vim.o.shiftwidth = 4
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "make",
     callback = function()
-        vim.opt_locat.expandtab = false
+        vim.opt_local.expandtab = false
     end,
 })
 
