@@ -5,6 +5,9 @@ return {
 			"MunifTanjim/nui.nvim",
 			"nvim-lua/plenary.nvim",
 		},
+        keys = {
+            { "<leader>f", "<cmd>Neotree toggle<cr>", desc = "Toggle Neo-tree" },
+        },
 		lazy = false,
 		opts = {
 			close_if_last_window = true,
