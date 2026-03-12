@@ -3,6 +3,7 @@ return {
         vim.cmd([[colorscheme gruvbox]])
     end
     },
+    { "lewis6991/gitsigns.nvim" },
     {
         "mason-org/mason-lspconfig.nvim",
         dependencies = {
