@@ -13,6 +13,17 @@ return {
         opts = {},
     },
     {
+        "numToStr/Comment.nvim",
+        opts = {
+            optleader = {
+                line = "<C-_>",
+            },
+            toggler = {
+                line = "<C-_>",
+            },
+        },
+    },
+    {
         "saghen/blink.cmp",
         build = "cargo build --release",
         opts = {
