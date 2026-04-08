@@ -32,5 +32,8 @@
 (display-line-numbers-mode)
 (setq display-line-numbers-type 'relative)
 
+;; Disable the damn bell sound, and just flashing my screen doesn't count as a fix
+(setq ring-bell-function 'ignore)
+
 (ido-mode 1)
 (ido-everywhere 1)
