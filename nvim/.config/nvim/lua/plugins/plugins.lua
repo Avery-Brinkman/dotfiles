@@ -1,7 +1,9 @@
 return {
-    { "ellisonleao/gruvbox.nvim", lazy = false, priority = 1000, config = function ()
-        vim.cmd([[colorscheme gruvbox]])
-    end
+    {
+        "ellisonleao/gruvbox.nvim", lazy = false, priority = 1000,
+        config = function ()
+            vim.cmd([[colorscheme gruvbox]])
+        end
     },
     { "lewis6991/gitsigns.nvim" },
     {
@@ -41,6 +43,25 @@ return {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
         lazy = false,
+    },
+    {
+        "nvim-telescope/telescope.nvim",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            { "nvim-telescope/telescope-fzf-native.nvim", build = "make", },
+        },
+    },
+    {
+        "NeogitOrg/neogit", lazy = true,
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "sindrets/diffview.nvim",
+            "nvim-telescope/telescope.nvim",
+        },
+        cmd = "Neogit",
+        keys = {
+            { "<leader>gg", "<cmd>Neogit<cr>", desc = "Show Neogit UI", },
+        },
     },
 }
 
